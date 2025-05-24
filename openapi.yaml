@@ -1,0 +1,33 @@
+openapi: 3.0.1
+info:
+  title: Wolfram|Alpha Full Results
+  version: '1.0'
+servers:
+  - url: https://api.wolframalpha.com/v2
+paths:
+  /query:
+    get:
+      summary: Full Results Query
+      parameters:
+        - in: query
+          name: appid
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: input
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: output
+          schema:
+            type: string
+            enum: ['JSON','XML']
+      responses:
+        '200':
+          description: JSON response from Wolfram|Alpha
+          content:
+            application/json:
+              schema:
+                type: object

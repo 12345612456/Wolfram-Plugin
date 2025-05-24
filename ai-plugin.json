@@ -1,0 +1,19 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Wolfram|Alpha",
+  "name_for_model": "wolfram",
+  "description_for_human": "Ask Wolfram|Alpha math and science questions",
+  "description_for_model": "Plugin for querying Wolfram|Alpha Full Results API. Use this to get structured JSON answers to math and science queries.",
+  "auth": {
+    "type": "api_key",
+    "in": "query",
+    "name": "appid"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://12345612456.github.io/wolfram-plugin/openapi.yaml"
+  },
+  "logo_url": "https://12345612456.github.io/wolfram-plugin/logo.png",
+  "contact_email": balite55555@gmail.com,
+  "legal_info_url": "https://12345612456github.io/wolfram-plugin/README.md"
+}
